@@ -4,7 +4,8 @@
 <hr>
 
 ## Question 1
-> Write a program to calculate the diameter of a binary tree. The diameter of a binary tree is the length of the longest path between any two nodes in the tree. The path may or may not pass through the root.
+Write a program to calculate the diameter of a binary tree. The diameter of a binary tree is the length of the longest path between any two nodes in the tree. The path may or may not pass through the root.
+
 ---
 ### Input Format:
 The first line contains a list of integers representing the level-order traversal of the binary tree. Use -1 for null nodes.
