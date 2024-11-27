@@ -1,3 +1,8 @@
+/*
+    StudentID: 1103535
+    Name: Aaron Lin
+    Date of submission: 27 Nov 2024
+*/
 #include <bits/stdc++.h>
 #include <vector>
 #include <queue>
@@ -18,8 +23,8 @@ int diameterRecur(Node *root, int &ans) {
     if (root == nullptr)
         return 0;
 
-    int lHeight = diameterRecur(root->left, ans);
-    int rHeight = diameterRecur(root->right, ans);
+    int lHeight = diameterRecur(root->left, ans); //check the left children
+    int rHeight = diameterRecur(root->right, ans);//check the right children
 
     ans = max(ans, lHeight + rHeight); 
 
@@ -45,14 +50,14 @@ Node* buildTree(const vector<int>& arr) {
         Node* curr = q.front();
         q.pop();
 
-        // 插入左子節點
+        // insert the left child node
         if (arr[i] != -1) {
             curr->left = new Node(arr[i]);
             q.push(curr->left);
         }
         i++;
 
-        // 插入右子節點
+        // insert the right child node
         if (i < arr.size() && arr[i] != -1) {
             curr->right = new Node(arr[i]);
             q.push(curr->right);
@@ -64,7 +69,7 @@ Node* buildTree(const vector<int>& arr) {
 }
 
 int main() {
-    vector<int> arr = {1, 2, 3, 4, 5, -1, -1, -1, -1, 6, 7};
+    vector<int> arr = {1, 2, 3, 4, 5};
     Node* root = buildTree(arr);
     cout << diameter(root) << endl;
 

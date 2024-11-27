@@ -1,8 +1,13 @@
+To TA:
+    if you can not find the link of github repository. Because sometimes people may not open the .md file.
+    Thus, Here is for you.
+    https://github.com/aaaaaron722/hw2_1103535
+Aaron
+
 # Data Structure
 #### StudentID: 1103535
 #### Name: Aaron Lin
 #### Date of submission: 27 Nov 2024
-#### link of github repository: https://github.com/aaaaaron722/hw2_1103535
 <hr>
 
 ## Question 1

@@ -1,3 +1,8 @@
+/*
+    StudentID: 1103535
+    Name: Aaron Lin
+    Date of submission: 27 Nov 2024
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -10,7 +15,7 @@ struct Task {
         priority = task_priority;
     }
 
-    bool operator<(const Task &other) const {
+    bool operator<(const Task &other) const { //self define the operator
         return priority < other.priority;
     }
 };
